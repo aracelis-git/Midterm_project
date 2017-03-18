@@ -1,4 +1,4 @@
-# C++ Boilerplate
+# Tic-Tac-Toe Game (Originally Q-Learning)
 [![Build Status](https://travis-ci.org/aracelis-git/Midterm_project.svg?branch=master)](https://travis-ci.org/aracelis-git/Midterm_project)
 
 ---
