@@ -1,10 +1,9 @@
-/*
- * qLearning.h
- *
- *  Created on: Mar 17, 2017
- *      Author: viki
+/**
+ * @author    Aldrin I. Racelis
+ * @copyright Aldrin Racelis (c)2017
+ * @file      game.h
+ * @brief     Header for the Q Learning Class
  */
-
 
 
 

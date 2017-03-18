@@ -7,14 +7,14 @@
 
 
 
-#ifndef ticTacToe_H
-#define ticTacToe_H
+#ifndef gameBoard_H
+#define gameBoard_H
 
 #include <Eigen/Dense>
 #include <vector>
 
 
-class ticTacToe {
+class gameBoard {
 
 private:
 	int position;
@@ -28,10 +28,9 @@ private:
 	Eigen::ArrayXd winArray();
 
 public:
-	ticTacToe( );
-	~ticTacToe();
-	bool checkWinner(std::vector<int> board, std::vector<int> winning);
-	void playingGame();
+	gameBoard( );
+	~gameBoard();
+	void updateBoard();
 };
 
 #endif
