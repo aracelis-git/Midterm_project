@@ -25,8 +25,8 @@ private:
 	std::vector<int> board;
 	std::vector<std::string> array2;
 	std::vector<int> winning;
-//	Eigen::ArrayXd winCond();
-//	Eigen::ArrayXd winArray();
+	//Eigen::ArrayXd winCond();
+	//Eigen::ArrayXd winArray();
 
 public:
 	game( );

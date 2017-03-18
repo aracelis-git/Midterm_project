@@ -17,7 +17,6 @@ using namespace std;
 game::game() : inGame(true), turn(0), a(0) {
 	board = { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 	array2 = { "_", "_", "_", "_", "_", "_", "_", "_", "_" };
-
 }
 
 game::~game() { }
@@ -30,9 +29,11 @@ game::~game() { }
  */
 
 bool game::checkWinner(vector<int> board, vector<int> winning) {
-	Eigen::ArrayXd winCond <<  0, 1, 2, 3, 4, 5, 6, 7, 8, 0, 3, 6, 1, 4, 6, 2, 5, 8, 2, 4, 6, 0, 4, 8 ;
-	Eigen::ArrayXd winArray <<  0, 0, 0 ;
+	Eigen::ArrayXd winCond(24);
+	Eigen::ArrayXd winArray(3);
 	vector<int> winCheck {1, 2, 3};
+	winCond <<  0, 1, 2, 3, 4, 5, 6, 7, 8, 0, 3, 6, 1, 4, 6, 2, 5, 8, 2, 4, 6, 0, 4, 8 ;
+	winArray <<  0, 0, 0 ;
 	int i, j;
 	if (winning.at(0) == 1) {
 		player = "Player O";

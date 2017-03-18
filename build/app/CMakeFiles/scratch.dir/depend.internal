@@ -427,4 +427,5 @@ app/CMakeFiles/scratch.dir/main.cpp.o
  ../include/Eigen/src/plugins/CommonCwiseUnaryOps.h
  ../include/Eigen/src/plugins/MatrixCwiseBinaryOps.h
  ../include/Eigen/src/plugins/MatrixCwiseUnaryOps.h
+ ../include/game.h
  /home/viki/Homework/Midterm_project/app/main.cpp

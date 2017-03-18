@@ -1,7 +1,7 @@
 #include <iostream>
 #include <Eigen/Dense>
-//#include <vector>
-//#include <game.h>
+#include <vector>
+#include <game.h>
 //#include <ticTacToe.h>
 //#include <qLearning.h>
 
