@@ -1,0 +1,4 @@
+/home/viki/Homework/Midterm_project/build/app/CMakeFiles/scratch.dir
+/home/viki/Homework/Midterm_project/build/vendor/googletest/googletest/CMakeFiles/gtest.dir
+/home/viki/Homework/Midterm_project/build/vendor/googletest/googletest/CMakeFiles/gtest_main.dir
+/home/viki/Homework/Midterm_project/build/test/CMakeFiles/cpp-test.dir
