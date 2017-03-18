@@ -1,1 +1,0 @@
-/usr/bin/c++   -Wall -Wextra -Wpedantic   CMakeFiles/scratch.dir/main.cpp.o CMakeFiles/scratch.dir/game.cpp.o  -o scratch -rdynamic 
