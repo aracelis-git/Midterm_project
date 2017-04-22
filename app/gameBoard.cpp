@@ -15,7 +15,6 @@ using namespace std;
 
 gameBoard::gameBoard() :  a(0) {
 	array2 = { "_", "_", "_", "_", "_", "_", "_", "_", "_" };
-	boardValue = { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
   for (auto const &element: array2) {
   	cout << element << ' ';
   	a += 1;
@@ -28,19 +27,20 @@ gameBoard::gameBoard() :  a(0) {
 
 gameBoard::~gameBoard() { }
 
-void gameBoard::UpdateBoard(vector<int> &boardValue, int turn, int position)
+void gameBoard::UpdateBoard(vector<int> &boardvalue, int turn, int position)
 {
 	if (fmod(turn,2)==1) {
 		array2[position-1] = "X";
-		boardValue[position-1] = 2;
+		boardvalue[position-1] = 2;
 	} else {
 		array2[position-1] = "O";
-		boardValue[position-1] = 1;
+		boardvalue[position-1] = 1;
 	}
 }
 
 void gameBoard::PrintBoard()
 {
+  cout << endl;
 	for (auto const &element: array2) {
 		cout << element << ' ';
 		a += 1;

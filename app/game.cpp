@@ -58,27 +58,25 @@ bool game::checkWinner() {
 
 void game::playingGame() {
 	while (inGame) {
-	  	cout << "Please enter a number from 1-9" << endl;
-	  	cin >> position;
-	  	while (cin.fail() || position < 1 || position > 9 || boardValue[position-1] != 0)	{
-	  		cout << "Invalid input, please enter an open number from 1-9" << endl;
-	  	 	cin.clear();
-	  	 	cin.ignore(999,'\n');
-	  		cin >> position;
-	  	}
+	  cout << "Please enter a number from 1-9" << endl;
+	  cin >> position;
 
-	  	board.UpdateBoard(boardValue, turn, position);
+	  CheckInput();
 
+	  board.UpdateBoard(boardValue, turn, position);
+	  board.PrintBoard();
+	  turn += 1;
+	  inGame = checkWinner();
+	  if (turn == 9)
+	  	inGame = false;
+	}
+}
 
-			cout << endl;
-
-			board.PrintBoard();
-
-	  	turn += 1;
-
-	  	inGame = checkWinner();
-
-	  	if (turn == 9)
-	  		inGame = false;
-	 }
+void game::CheckInput() {
+  while (cin.fail() || position < 1 || position > 9 || boardValue[position-1] != 0)	{
+  	cout << "Invalid input, please enter an open number from 1-9" << endl;
+  	cin.clear();
+  	cin.ignore(999,'\n');
+  	cin >> position;
+  }
 }

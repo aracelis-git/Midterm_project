@@ -19,9 +19,7 @@ class gameBoard {
 private:
 	int a;
 	std::string player;
-	std::vector<int> boardValue;
 	std::vector<std::string> array2;
-	std::vector<int> winning;
 
 public:
 	gameBoard( );

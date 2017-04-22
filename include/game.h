@@ -34,6 +34,7 @@ public:
 	~game();
 	bool checkWinner();
 	void playingGame();
+	void CheckInput();
 };
 
 #endif
