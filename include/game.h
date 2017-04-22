@@ -12,6 +12,7 @@
 
 #include <Eigen/Dense>
 #include <vector>
+#include "../include/gameBoard.h"
 
 
 class game {
@@ -20,17 +21,17 @@ private:
 	int position;
 	int inGame;
 	int turn;
-	int a;
+	int* winning_ptr;
 	std::string player;
-	std::vector<int> board;
-	std::vector<std::string> array2;
+	std::vector<int> boardValue;
 	std::vector<int> winning;
 	std::vector<int> winCheck;
+	gameBoard board;
 
 public:
 	game( );
 	~game();
-	bool checkWinner(std::vector<int> board, std::vector<int> winning);
+	bool checkWinner();
 	void playingGame();
 };
 

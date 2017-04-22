@@ -9,13 +9,13 @@
 #include <iostream>
 #include <Eigen/Dense>
 #include <vector>
-#include "../include/ticTacToe.h"
+#include "../include/gameBoard.h"
 
 using namespace std;
 
-ticTacToe::ticTacToe() : turn(0), a(0) {
-	board = { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+gameBoard::gameBoard() :  a(0) {
 	array2 = { "_", "_", "_", "_", "_", "_", "_", "_", "_" };
+	boardValue = { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
   for (auto const &element: array2) {
   	cout << element << ' ';
   	a += 1;
@@ -26,6 +26,37 @@ ticTacToe::ticTacToe() : turn(0), a(0) {
   }
 }
 
-game::~game() { }
+gameBoard::~gameBoard() { }
+
+void gameBoard::updateBoard(vector<int> &boardValue, int turn, int position)
+{
+	if (fmod(turn,2)==1) {
+		array2[position-1] = "X";
+		boardValue[position-1] = 2;
+		winning = {2, 2, 2};
+	} else {
+		array2[position-1] = "O";
+		boardValue[position-1] = 1;
+		winning = {1, 1, 1};
+	}
+}
+
+void gameBoard::printBoard()
+{
+	for (auto const &element: array2) {
+		cout << element << ' ';
+		a += 1;
+		if (a == 3) {
+			a = 0;
+			cout << endl;
+		}
+	}
+	cout << endl;
+}
+
+vector<int>& gameBoard::getWinCond()
+{
+  return winning;
+}
 
 
