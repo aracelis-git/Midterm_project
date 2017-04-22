@@ -22,15 +22,13 @@ private:
 	std::vector<int> boardValue;
 	std::vector<std::string> array2;
 	std::vector<int> winning;
-	//Eigen::ArrayXd winCond();
-	//Eigen::ArrayXd winArray();
 
 public:
 	gameBoard( );
 	~gameBoard();
-	void updateBoard(std::vector<int> &boardValue, int turn, int position);
-	void printBoard();
-	std::vector<int>& getWinCond();
+	void UpdateBoard(std::vector<int> &boardValue, int turn, int position);
+	void PrintBoard();
+	std::vector<int>& GetWinCond();
 };
 
 #endif

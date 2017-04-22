@@ -21,12 +21,13 @@ private:
 	int position;
 	int inGame;
 	int turn;
-	int* winning_ptr;
 	std::string player;
 	std::vector<int> boardValue;
 	std::vector<int> winning;
 	std::vector<int> winCheck;
 	gameBoard board;
+	Eigen::Array<double,24,1> winCond;
+	Eigen::Array3d winArray;
 
 public:
 	game( );

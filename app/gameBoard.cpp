@@ -28,20 +28,18 @@ gameBoard::gameBoard() :  a(0) {
 
 gameBoard::~gameBoard() { }
 
-void gameBoard::updateBoard(vector<int> &boardValue, int turn, int position)
+void gameBoard::UpdateBoard(vector<int> &boardValue, int turn, int position)
 {
 	if (fmod(turn,2)==1) {
 		array2[position-1] = "X";
 		boardValue[position-1] = 2;
-		winning = {2, 2, 2};
 	} else {
 		array2[position-1] = "O";
 		boardValue[position-1] = 1;
-		winning = {1, 1, 1};
 	}
 }
 
-void gameBoard::printBoard()
+void gameBoard::PrintBoard()
 {
 	for (auto const &element: array2) {
 		cout << element << ' ';
@@ -53,10 +51,4 @@ void gameBoard::printBoard()
 	}
 	cout << endl;
 }
-
-vector<int>& gameBoard::getWinCond()
-{
-  return winning;
-}
-
 
