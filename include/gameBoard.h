@@ -7,28 +7,26 @@
 
 
 
-#ifndef gameBoard_H
-#define gameBoard_H
+#ifndef INCLUDE_GAMEBOARD_H_
+#define INCLUDE_GAMEBOARD_H_
 
 #include <Eigen/Dense>
 #include <vector>
-
+#include <string>
 
 class gameBoard {
+ private:
+  int a;
+  std::string player;
+  std::vector<std::string> array2;
 
-private:
-	int a;
-	std::string player;
-	std::vector<std::string> array2;
-
-public:
-	gameBoard( );
-	~gameBoard();
-	void UpdateBoard(std::vector<int> &boardValue, int turn, int position);
-	void PrintBoard();
-	std::vector<int>& GetWinCond();
+ public:
+  gameBoard();
+  ~gameBoard();
+  void UpdateBoard(std::vector<int> &boardValue, int turn, int position);
+  void PrintBoard();
 };
 
-#endif
+#endif  // INCLUDE_GAMEBOARD_H_
 
 

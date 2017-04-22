@@ -11,8 +11,8 @@ int main() {
 	cout << "Please wait while the computer trains for tic-tac-toe *Not Implemented*" << endl << endl;
 
   // O = 1 | X = 2
-  game yay;
-  yay.playingGame();
+  game letsplay;
+  letsplay.playingGame();
 
   return 0;
 
