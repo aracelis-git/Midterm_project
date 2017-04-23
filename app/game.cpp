@@ -3,7 +3,6 @@
  * @copyright Aldrin Racelis (c)2017
  * @file      game.cpp
  * @brief     Class Implementation of the Game Object
- *
  */
 
 #include "../include/game.h"
@@ -27,11 +26,7 @@ game::~game() { }
 
 /**
  * @brief Determines if there is a winner in the game.
- * @param the current state of board
- * @param the winning vector
- *
  */
-
 bool game::checkWinner() {
   int i, j;
   if (fmod(turn, 2) == 1) {
@@ -56,6 +51,11 @@ bool game::checkWinner() {
   return true;
 }
 
+/**
+ * @brief Initiates each step for playing the game. It asks for the input,
+ * checks for valid input, updates the board values, prints the board
+ * and determines if there is a winner.
+ */
 void game::playingGame() {
   while (inGame) {
     cout << "Please enter a number from 1-9" << endl;
@@ -72,6 +72,9 @@ void game::playingGame() {
   }
 }
 
+/**
+ * @brief Validates the input for choosing the next move.
+ */
 void game::CheckInput() {
   while (cin.fail() || position < 1 || position > 9 ||
             boardValue[position-1] != 0) {

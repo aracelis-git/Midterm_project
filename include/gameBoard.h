@@ -5,8 +5,6 @@
  * @brief     Header for the Game Board Class
  */
 
-
-
 #ifndef INCLUDE_GAMEBOARD_H_
 #define INCLUDE_GAMEBOARD_H_
 
