@@ -5,10 +5,10 @@
  * @brief     Class Implementation of the Tic-Tac-Toe Object
  */
 
-#include <iostream>
-#include <Eigen/Dense>
-#include <vector>
 #include "../include/gameBoard.h"
+#include <Eigen/Dense>
+#include <iostream>
+#include <vector>
 
 using std::cout;  using std::vector;
 using std::endl;
@@ -20,16 +20,6 @@ using std::endl;
 gameBoard::gameBoard() :  a(0) {
   array2 = { "_", "_", "_", "_", "_", "_", "_", "_", "_" };
   PrintBoard();
-  /*
-  for (auto const &element : array2) {
-    cout << element << ' ';
-    a += 1;
-    if (a == 3) {
-      a = 0;
-      cout << endl;
-    }
-  }
-  */
 }
 
 gameBoard::~gameBoard() { }
@@ -55,7 +45,10 @@ void gameBoard::UpdateBoard(vector<int> &boardvalue, int turn, int position) {
  * @brief Prints the current state of the board to the screen.
  */
 void gameBoard::PrintBoard() {
-  cout << endl;
+  cout << endl << endl << endl << endl << endl << endl << endl << endl << endl;
+  cout << endl << endl << endl << endl << endl << endl << endl << endl << endl;
+  cout << endl << endl << endl << endl << endl << endl << endl << endl << endl;
+  cout << endl << endl << endl << endl << endl << endl << endl << endl << endl;
   for (auto const &element : array2) {
     cout << element << ' ';
     a += 1;

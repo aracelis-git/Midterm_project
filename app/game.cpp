@@ -6,12 +6,13 @@
  */
 
 #include "../include/game.h"
+//#include "gameBoard.cpp"
+#include <Eigen/Dense>
 #include <iostream>
 #include <vector>
-#include <Eigen/Dense>
-#include "gameBoard.cpp"
 
 using std::cout;  using std::cin;
+using std::endl;
 
 game::game() : position(0), inGame(true), turn(0) {
   boardValue = { 0, 0, 0, 0, 0, 0, 0, 0, 0 };

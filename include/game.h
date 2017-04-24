@@ -5,15 +5,13 @@
  * @brief     Header for the game Class
  */
 
-
-
 #ifndef INCLUDE_GAME_H_
 #define INCLUDE_GAME_H_
 
+#include "../include/gameBoard.h"
 #include <Eigen/Dense>
 #include <vector>
 #include <string>
-#include "../include/gameBoard.h"
 
 class game {
  private:

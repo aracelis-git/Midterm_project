@@ -5,17 +5,18 @@
  * @brief     Runs the tic-tac-toe game with Q-learning
  */
 
-#include <iostream>
 #include <Eigen/Dense>
-#include <vector>
 #include <game.h>
 #include <gameBoard.h>
-//#include <qLearning.h>
+#include <iostream>
+#include <vector>
+
+// #include <qLearning.h>
 
 using std::cout;  using std::endl;
 
 int main() {
-	cout << "Please wait while the computer trains for tic-tac-toe *Not "
+  cout << "Please wait while the computer trains for tic-tac-toe *Not "
         "Implemented*" << endl;
 
   // O = 1 | X = 2
@@ -23,5 +24,4 @@ int main() {
   letsplay.playingGame();
 
   return 0;
-
 }

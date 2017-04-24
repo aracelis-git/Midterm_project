@@ -9,7 +9,6 @@
 #define INCLUDE_QLEARNING_H_
 
 #include <Eigen/Dense>
-#include <vector>
 
 class qLearning {
  private:

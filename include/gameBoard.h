@@ -9,8 +9,6 @@
 #define INCLUDE_GAMEBOARD_H_
 
 #include <Eigen/Dense>
-#include <vector>
-#include <string>
 
 class gameBoard {
  private:
