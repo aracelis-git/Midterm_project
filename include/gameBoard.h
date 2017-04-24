@@ -9,11 +9,11 @@
 #define INCLUDE_GAMEBOARD_H_
 
 #include <Eigen/Dense>
+#include <vector>
 
 class gameBoard {
  private:
   int a;
-  std::string player;
   std::vector<std::string> array2;
 
  public:

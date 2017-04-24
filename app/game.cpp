@@ -6,7 +6,6 @@
  */
 
 #include "../include/game.h"
-//#include "gameBoard.cpp"
 #include <Eigen/Dense>
 #include <iostream>
 #include <vector>
