@@ -26,10 +26,10 @@ TEST(ChecksWinner, NoWinnerAtStart) {
  * updates correctly
  */
 TEST(ChecksUpdateBoard, BoardUpdatesCorrectly) {
-	gameBoard test;
-	int turn = 0;
-	int position = 4;
-	std::vector<int> boardValue = { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+  gameBoard test;
+  int turn = 0;
+  int position = 4;
+  std::vector<int> boardValue = { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
   test.UpdateBoard(boardValue, turn, position);
   EXPECT_EQ(boardValue[3],1);
 }
