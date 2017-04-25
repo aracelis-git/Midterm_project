@@ -9,7 +9,7 @@
 
 Originally made to create a self-learning tic-tac-toe robot.
 
-The final product is a tic-tac-toe game played within the command line against another person. Unfortunately, I was unable to take advantage of the extension. I apologize for wasting your time. 
+The final product is a tic-tac-toe game played within the command line against another person. 
 
 The execution of the program is relatively easy. Execute the tictactoe.exe, then press any number from 1-9 to indicate your choice of move. 1 is the top left corner, 2 being the top position, and continues onwards with a top to bottom, left to right scheme. "O" and "X" take turns with "O" starting first. 
 
@@ -44,6 +44,7 @@ Build the file using cmake and make.
 ## SIP
 
 <a href="https://drive.google.com/open?id=1KFQ9Ns8AJOG_RbMY5DaGz2tUdGVuaAmlSZTdXr1TY-M">Backlog</a>
+<a href="https://docs.google.com/spreadsheets/d/1cvphMVsGHO1l1VFnBONkp5L9tVWFDhlSldkhnq5PvsM/edit?usp=sharing">Product Log</a>
 
 ## Tests
 
