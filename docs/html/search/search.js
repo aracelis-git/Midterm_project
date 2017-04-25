@@ -7,8 +7,8 @@
 
 var indexSectionsWithContent =
 {
-  0: "c",
-  1: "c"
+  0: "t",
+  1: "t"
 };
 
 var indexSectionNames =

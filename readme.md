@@ -56,6 +56,7 @@ To run the game yourself, follow the instructions for build, then in the same fo
 ## SIP
 
 <a href="https://drive.google.com/open?id=1KFQ9Ns8AJOG_RbMY5DaGz2tUdGVuaAmlSZTdXr1TY-M">Backlog</a>
+<a href="https://docs.google.com/spreadsheets/d/1cvphMVsGHO1l1VFnBONkp5L9tVWFDhlSldkhnq5PvsM/edit?usp=sharing">Product Log</a>
 
 ## Tests
 
