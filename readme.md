@@ -35,11 +35,22 @@ No Dependencies
 
 ## Build
 
-Build the file using cmake and make. 
+After cloning the repository, build the file using cmake and make. 
+
+	mkdir build
+	cd build
+	cmake ..
+	make
 
 ## Demo
 
+Below is a video of the game in action.
+
 <a href="https://drive.google.com/open?id=0BxfrmvtnmsrXdmNpLXRlMXR1T3M"> Link to the Demo video</a>
+
+To run the game yourself, follow the instructions for build, then in the same folder, run the following code.
+
+	./app/tictactoegame
 
 ## SIP
 
@@ -48,7 +59,15 @@ Build the file using cmake and make.
 
 ## Tests
 
-Tests were not included in this project.
+Unit tests made with gtest verfied the functions of both the game and gameBoard classes. To run the test, execute the following code in the root directory.
+
+	mkdir build
+	cd build
+	cmake ..
+	make
+	test/cpp-test
+	
+The unit tests are integrated with Travis, as seen by the badge at the top of the readme.
 
 ## Doxygen Generation
 
