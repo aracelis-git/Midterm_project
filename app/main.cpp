@@ -10,18 +10,19 @@
 #include <gameBoard.h>
 #include <iostream>
 #include <vector>
-
-// #include <qLearning.h>
+#include <qLearning.h>
 
 using std::cout;  using std::endl;
 
 int main() {
-  cout << "Please wait while the computer trains for tic-tac-toe *Not "
+  /*cout << "Please wait while the computer trains for tic-tac-toe *Not "
         "Implemented*" << endl;
 
   // O = 1 | X = 2
   game letsplay;
-  letsplay.playingGame();
+  letsplay.PlayingGame();*/
+
+	qLearning yay;
 
   return 0;
 }

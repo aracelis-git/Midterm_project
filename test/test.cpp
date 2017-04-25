@@ -18,7 +18,7 @@
  */
 TEST(ChecksWinner, NoWinnerAtStart) {
   game test;
-  EXPECT_EQ(test.checkWinner(),true);
+  EXPECT_EQ(test.CheckWinner(),true);
 }
 
 /**

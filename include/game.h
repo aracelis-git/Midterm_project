@@ -8,10 +8,10 @@
 #ifndef INCLUDE_GAME_H_
 #define INCLUDE_GAME_H_
 
-#include "../include/gameBoard.h"
 #include <Eigen/Dense>
-#include <vector>
 #include <string>
+#include <vector>
+#include "../include/gameBoard.h"
 
 class game {
  private:
@@ -29,8 +29,8 @@ class game {
  public:
   game();
   ~game();
-  bool checkWinner();
-  void playingGame();
+  bool CheckWinner();
+  void PlayingGame();
   void CheckInput();
 };
 

@@ -27,7 +27,7 @@ game::~game() { }
 /**
  * @brief Determines if there is a winner in the game.
  */
-bool game::checkWinner() {
+bool game::CheckWinner() {
   int i, j;
   if (fmod(turn, 2) == 1) {
     player = "Player O";
@@ -56,7 +56,7 @@ bool game::checkWinner() {
  * checks for valid input, updates the board values, prints the board
  * and determines if there is a winner.
  */
-void game::playingGame() {
+void game::PlayingGame() {
   while (inGame) {
     cout << "Please enter a number from 1-9" << endl;
     cin >> position;
@@ -66,7 +66,7 @@ void game::playingGame() {
     board.UpdateBoard(boardValue, turn, position);
     board.PrintBoard();
     turn += 1;
-    inGame = checkWinner();
+    inGame = CheckWinner();
     if (turn == 9)
       inGame = false;
   }

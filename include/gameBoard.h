@@ -10,6 +10,7 @@
 
 #include <Eigen/Dense>
 #include <vector>
+#include <string>
 
 class gameBoard {
  private:

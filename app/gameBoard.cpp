@@ -26,7 +26,7 @@ gameBoard::~gameBoard() { }
 
 
 /**
- * @brief Updates the state of the board with the current player's next move
+ * @brief Updates the state of the board with the current player's next move.
  * @param the state of the board in regards to Xs and Os
  * @param the turn number in the game
  * @param the position of the users desired move
