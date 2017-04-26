@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_8ycm__extra__conf_8py">
+    <title>.ycm_extra_conf.py File Reference</title>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>list <link linkend="_8ycm__extra__conf_8py_1abd73d8e4551f1a637280b3876d1ae2e3">flags</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="_8ycm__extra__conf_8py_1a6a4d7e96c7bc9093b406af626b7936a2">compilation_database_folder</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>tuple <link linkend="_8ycm__extra__conf_8py_1a64dbaa3229ec575b68ec333442e10cee">database</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>list <link linkend="_8ycm__extra__conf_8py_1a47014996e1e517071cd0412a22adb123">SOURCE_EXTENSIONS</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>def <link linkend="_8ycm__extra__conf_8py_1a28506547e5aee74e22557e0d523fbba7">DirectoryOfThisScript</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>def <link linkend="_8ycm__extra__conf_8py_1aa17b17787ee25ee278fe0330e8245fb8">MakeRelativePathsInFlagsAbsolute</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>def <link linkend="_8ycm__extra__conf_8py_1a38a706def8307cce6e9348c3379274bd">IsHeaderFile</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>def <link linkend="_8ycm__extra__conf_8py_1a1c7294d0bfbd409f9d5d418ed3e91a52">GetCompilationInfoForFile</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>def <link linkend="_8ycm__extra__conf_8py_1af1c9418abf3c686550f9a8be0dc6b2ef">FlagsForFile</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /home/viki/Homework/Midterm_project/.ycm_extra_conf.py</para>
+    </simplesect>
+</section>

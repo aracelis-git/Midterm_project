@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Tic-Tac-Toe Game (Originally Q-Learning)</title>
+
+<para><link xlink:href="https://travis-ci.org/aracelis-git/Midterm_project">![Build Status](https://travis-ci.org/aracelis-git/Midterm_project.svg?branch=master)</link> <informaltable frame='bottom'><tgroup cols='1'><colspec align='center'/><tbody><row><entry align='center'>
+</entry></row></tbody></tgroup></informaltable>
+</para>
+
+<para><formalpara><title>Overview and Purpose</title></formalpara>
+</para>
+
+<para>Originally made to create a self-learning tic-tac-toe robot.</para>
+
+<para>The final product is a tic-tac-toe game played within the command line against another person.</para>
+
+<para>The execution of the program is relatively easy. Execute the tictactoe.exe, then press any number from 1-9 to indicate your choice of move. 1 is the top left corner, 2 being the top position, and continues onwards with a top to bottom, left to right scheme. &quot;O&quot; and &quot;X&quot; take turns with &quot;O&quot; starting first.</para>
+
+<para><formalpara><title>License</title></formalpara>
+</para>
+
+<para>Copyright 2017 Aldrin I. Racelis</para>
+
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at</para>
+
+<para><link xlink:href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</link></para>
+
+<para>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</para>
+
+<para><formalpara><title>Dependencies</title></formalpara>
+</para>
+
+<para>No Dependencies</para>
+
+<para><formalpara><title>Build</title></formalpara>
+</para>
+
+<para>After cloning the repository, build the file using cmake and make. <programlisting><literallayout>mkdir build
+cd build
+cmake ..
+make
+</literallayout></programlisting></para>
+
+<para><formalpara><title>Demo</title></formalpara>
+</para>
+
+<para>Below is a video of the game in action.</para>
+
+<para><link xlink:href="https://drive.google.com/open?id=0BxfrmvtnmsrXdmNpLXRlMXR1T3M">Link to the Demo video</link></para>
+
+<para>To run the game yourself, follow the instructions for build, then in the same folder, run the following code. <programlisting><literallayout>./app/tictactoegame
+</literallayout></programlisting></para>
+
+<para><formalpara><title>SIP</title></formalpara>
+</para>
+
+<para><link xlink:href="https://drive.google.com/open?id=1KFQ9Ns8AJOG_RbMY5DaGz2tUdGVuaAmlSZTdXr1TY-M">Backlog</link> <link xlink:href="https://docs.google.com/spreadsheets/d/1cvphMVsGHO1l1VFnBONkp5L9tVWFDhlSldkhnq5PvsM/edit?usp=sharing">Product Log</link></para>
+
+<para><formalpara><title>Tests</title></formalpara>
+</para>
+
+<para>Unit tests made with gtest verfied the functions of both the game and gameBoard classes. To run the test, execute the following code in the root directory. <programlisting><literallayout>mkdir build
+cd build
+cmake ..
+make
+test/cpp-test
+</literallayout></programlisting></para>
+
+<para>The unit tests are integrated with Travis, as seen by the badge at the top of the readme.</para>
+
+<para><formalpara><title>Doxygen Generation</title></formalpara>
+</para>
+
+<para>I generated the documents using the following commands within the command line:</para>
+
+<para>doxygen -g doxygenfile</para>
+
+<para>doxygen doxygenfile </para>
+
+</chapter>

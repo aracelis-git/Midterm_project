@@ -1,0 +1,68 @@
+\href{https://travis-ci.org/aracelis-git/Midterm_project}{\tt !\mbox{[}Build Status\mbox{]}(https\-://travis-\/ci.\-org/aracelis-\/git/\-Midterm\-\_\-project.\-svg?branch=master)} 
+
+
+
+\subsection*{Overview and Purpose}
+
+Originally made to create a self-\/learning tic-\/tac-\/toe robot.
+
+The final product is a tic-\/tac-\/toe game played within the command line against another person.
+
+The execution of the program is relatively easy. Execute the tictactoe.\-exe, then press any number from 1-\/9 to indicate your choice of move. 1 is the top left corner, 2 being the top position, and continues onwards with a top to bottom, left to right scheme. \char`\"{}\-O\char`\"{} and \char`\"{}\-X\char`\"{} take turns with \char`\"{}\-O\char`\"{} starting first.
+
+\subsection*{License}
+
+Copyright 2017 Aldrin I. Racelis
+
+Licensed under the Apache License, Version 2.\-0 (the \char`\"{}\-License\char`\"{}); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+\href{http://www.apache.org/licenses/LICENSE-2.0}{\tt http\-://www.\-apache.\-org/licenses/\-L\-I\-C\-E\-N\-S\-E-\/2.\-0}
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \char`\"{}\-A\-S I\-S\char`\"{} B\-A\-S\-I\-S, W\-I\-T\-H\-O\-U\-T W\-A\-R\-R\-A\-N\-T\-I\-E\-S O\-R C\-O\-N\-D\-I\-T\-I\-O\-N\-S O\-F A\-N\-Y K\-I\-N\-D, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+\subsection*{Dependencies}
+
+No Dependencies
+
+\subsection*{Build}
+
+After cloning the repository, build the file using cmake and make. \begin{DoxyVerb}mkdir build
+cd build
+cmake ..
+make
+\end{DoxyVerb}
+
+
+\subsection*{Demo}
+
+Below is a video of the game in action.
+
+\href{https://drive.google.com/open?id=0BxfrmvtnmsrXdmNpLXRlMXR1T3M}{\tt Link to the Demo video}
+
+To run the game yourself, follow the instructions for build, then in the same folder, run the following code. \begin{DoxyVerb}./app/tictactoegame
+\end{DoxyVerb}
+
+
+\subsection*{S\-I\-P}
+
+\href{https://drive.google.com/open?id=1KFQ9Ns8AJOG_RbMY5DaGz2tUdGVuaAmlSZTdXr1TY-M}{\tt Backlog} \href{https://docs.google.com/spreadsheets/d/1cvphMVsGHO1l1VFnBONkp5L9tVWFDhlSldkhnq5PvsM/edit?usp=sharing}{\tt Product Log}
+
+\subsection*{Tests}
+
+Unit tests made with gtest verfied the functions of both the game and game\-Board classes. To run the test, execute the following code in the root directory. \begin{DoxyVerb}mkdir build
+cd build
+cmake ..
+make
+test/cpp-test
+\end{DoxyVerb}
+
+
+The unit tests are integrated with Travis, as seen by the badge at the top of the readme.
+
+\subsection*{Doxygen Generation}
+
+I generated the documents using the following commands within the command line\-:
+
+doxygen -\/g doxygenfile
+
+doxygen doxygenfile 
